@@ -1,0 +1,14 @@
+{
+  "source_ip": "127.0.0.1",
+  "destination_ip": "127.0.0.2",
+  "ciphertext": "WmozIrT9lgDAu+XZnpPHAqOtwaCBmjXVSOyr/kLQsjA=",
+  "encrypted_key": "G6KeOy8iyrn7OkGxW2naFnO+JCGGqoFeo0zet2UXSeyshAV3fq21J99ohg49KziEQnAW+rpIJ9wFv894QbRQuSrGChbC6pRMSM562LwTgYiY2gMvpP1jO98m9G4Xw4XRdddUacz3gVUSC9nnn0FQwGm1RhUkV4A4U+EOJHJ9yevEMmjNnjJgDxYf5wKCHK8D2x3kXeZNSuNv+lLQGcNqGtjbm4CD60JUcULamCbQHDxszNdVDcOUa2o4B6SPKCxc5xdgRkTgNWSZBJHs7oQmyNnrwYXGoA3bdxNcrkZTOGyYG2sM8xeJt6RngkkoXpf8GpYeGFpCYUIM7hCpFi/cUw==",
+  "hash": "11d2b5aa51a0badc09b50d63a2f86b43a1dd66fcea7db2c6fdde677011711a13",
+  "signature": "NbaAr1aIhKmaVqopAHa3Zmd0HrMWAEUpdll56rkguz3mu9oT8InnX5O6iumGvPPN2YjMMDDKzLWu9zjSSO8DbQ/nxreqY+PNKZf/O2n23GdHwoh01ImtBBfDSyDAKP1IKtorqYKNDgIl4ILZoMwPX820qmhXthPBy5dBzvxZQ4pWFoDnt8OnC1cav7ZS+RSeno1F58S57u9mef8SjutY/DlB5pR0phdLVri5Pj+ooiKX52f2Rz1o+XzYLfPTidUVIRToi8KGDg4hX+f9678/xvaQ4Cc6jOsU5k8eUGuxdk07LRz6IKK9VLSLlE4N1nrbZom/jU1MmHL1lZHzOLiQgw==",
+  "iv": "mgDEbA/4hTzFIWrxl05Aqg==",
+  "algorithm": {
+    "symmetric": "AES-256-CBC",
+    "asymmetric": "RSA",
+    "hash": "SHA-256"
+  }
+}
