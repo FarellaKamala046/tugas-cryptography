@@ -5,6 +5,8 @@ from Crypto.PublicKey import RSA
 from Crypto.Cipher import PKCS1_OAEP
 import os
 import base64
+import json
+import socket
 
 plaintext = "Bob, cek situasi di lokasi X".encode()
 
@@ -51,3 +53,38 @@ encrypted_key_b64 = base64.b64encode(encrypted_key).decode()
 
 print("Encrypted Key:", encrypted_key_b64)
 
+#payload
+def send_b64(data):
+    return base64.b64encode(data).decode()
+
+ciphertext_b64 = send_b64(ciphertext)
+encrypted_key_b64 = send_b64(encrypted_key)
+signature_b64 = send_b64(signature)
+iv_b64 = send_b64(iv)
+hash_hex = hash_bytes.hex()
+payload = {
+  "source_ip": "127.0.0.1",
+  "destination_ip": "127.0.0.2",
+  "ciphertext": ciphertext_b64,
+  "encrypted_key": encrypted_key_b64,
+  "hash": hash_hex,
+  "signature": signature_b64,
+  "iv": iv_b64,
+  "algorithm": {
+    "symmetric": "AES-256-CBC",
+    "asymmetric": "RSA",
+    "hash": "SHA-256"
+  }
+}
+
+payload_json = json.dumps(payload)
+
+print("\n===== PAYLOAD ======")
+print(payload_json)
+
+#socket programming
+client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+client.connect(("127.0.0.2", 5000)) #IP Bob
+client.send(payload_json.encode())
+client.close()
+print("\nPayload sent to Bob")
