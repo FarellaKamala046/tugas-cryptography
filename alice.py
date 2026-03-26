@@ -78,7 +78,7 @@ payload = {
   }
 }
 
-payload_json = json.dumps(payload)
+payload_json = json.dumps(payload, indent=4)
 
 print("\n===== PAYLOAD ======")
 print(payload_json)
