@@ -8,7 +8,8 @@ import base64
 import json
 import socket
 
-plaintext = "Bob, cek situasi di lokasi X".encode()
+user_input = input("Input plaintext: ")
+plaintext = user_input.encode()
 
 #ciphertext AES-256-CBC
 key = os.urandom(32)  #AES-256
