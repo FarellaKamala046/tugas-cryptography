@@ -11,9 +11,13 @@ import socket
 print("[ALICE] Starting secure message process...\n")
 
 #input plaintext
-user_input = input("[ALICE] Input plaintext: ")
-plaintext = user_input.encode()
+# user_input = input("[ALICE] Input plaintext: ")
+# plaintext = user_input.encode()
 
+#plaintext
+message = "Bob, cek situasi di lokasi X"
+plaintext = message.encode()
+print(message)
 
 #ciphertext AES-256-CBC
 key = os.urandom(32)  #AES-256
