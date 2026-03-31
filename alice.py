@@ -98,7 +98,7 @@ print(payload_json)
 #socket programming send to Bob
 print("\n[ALICE] Sending payload to Bob...")
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-client.connect(("127.0.0.2", 5000)) #IP Bob
+client.connect(("10.38.102.21", 5000)) #IP Bob
 client.send(payload_json.encode())
 client.close()
 print("\nPayload successfully sent to Bob")
