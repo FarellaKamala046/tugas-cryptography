@@ -1,6 +1,6 @@
 # Secure Message Delivery (Alice & Bob)
 
-Project ini merupakan implementasi sistem komunikasi yang dilakukan oleh Alice (client) dan Bob (server) menggunakan pendekatan **hybrid cryptography** yang menggabungkan:
+Project ini merupakan tugas mata kuliah II3230 Keamanan Informasi yang dibuat oleh **Farella Kamala Budianto (18223046)** dan **Kenlyn Tesalonika Winata (18223098)** untuk implementasi sistem komunikasi yang dilakukan antara Alice (client) dan Bob (server) menggunakan pendekatan **hybrid cryptography** yang menggabungkan:
 - AES-256-CBC → untuk enkripsi pesan
 - RSA → untuk enkripsi kunci AES & digital signature
 - SHA-256 → untuk menjaga integritas data
